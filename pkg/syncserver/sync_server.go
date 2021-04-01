@@ -35,11 +35,11 @@ import (
 
 	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
 	"github.com/unai-ttxu/libcalico-go/lib/health"
-	"github.com/projectcalico/typha/pkg/buildinfo"
-	"github.com/projectcalico/typha/pkg/jitter"
-	"github.com/projectcalico/typha/pkg/snapcache"
-	"github.com/projectcalico/typha/pkg/syncproto"
-	"github.com/projectcalico/typha/pkg/tlsutils"
+	"github.com/unai-ttxu/typha/pkg/buildinfo"
+	"github.com/unai-ttxu/typha/pkg/jitter"
+	"github.com/unai-ttxu/typha/pkg/snapcache"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/tlsutils"
 )
 
 var (

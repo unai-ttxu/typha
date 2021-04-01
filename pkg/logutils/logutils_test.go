@@ -30,7 +30,7 @@ import (
 
 	"sync"
 
-	. "github.com/projectcalico/typha/pkg/logutils"
+	. "github.com/unai-ttxu/typha/pkg/logutils"
 )
 
 var _ = Describe("Logutils", func() {

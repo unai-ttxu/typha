@@ -27,8 +27,8 @@ import (
 
 	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
 	"github.com/unai-ttxu/libcalico-go/lib/health"
-	"github.com/projectcalico/typha/pkg/jitter"
-	"github.com/projectcalico/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/jitter"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
 )
 
 const (

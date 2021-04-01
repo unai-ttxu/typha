@@ -15,7 +15,7 @@
 package config_test
 
 import (
-	. "github.com/projectcalico/typha/pkg/config"
+	. "github.com/unai-ttxu/typha/pkg/config"
 
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"

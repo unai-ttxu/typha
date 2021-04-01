@@ -17,7 +17,7 @@ package snapcache_test
 import (
 	"strconv"
 
-	"github.com/projectcalico/typha/pkg/snapcache"
+	"github.com/unai-ttxu/typha/pkg/snapcache"
 
 	"context"
 	"fmt"
@@ -32,7 +32,7 @@ import (
 	"github.com/unai-ttxu/libcalico-go/lib/backend/model"
 	"github.com/unai-ttxu/libcalico-go/lib/health"
 	"github.com/unai-ttxu/libcalico-go/lib/set"
-	"github.com/projectcalico/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
 )
 
 type healthRecord struct {

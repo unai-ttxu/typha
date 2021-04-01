@@ -27,11 +27,11 @@ import (
 	"context"
 
 	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
-	"github.com/projectcalico/typha/pkg/buildinfo"
-	"github.com/projectcalico/typha/pkg/config"
-	"github.com/projectcalico/typha/pkg/logutils"
-	"github.com/projectcalico/typha/pkg/syncclient"
-	"github.com/projectcalico/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/buildinfo"
+	"github.com/unai-ttxu/typha/pkg/config"
+	"github.com/unai-ttxu/typha/pkg/logutils"
+	"github.com/unai-ttxu/typha/pkg/syncclient"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
 )
 
 const usage = `Test client for Typha, Calico's fan-out proxy.

@@ -79,7 +79,7 @@ VALIDARCHES = $(filter-out $(EXCLUDEARCH),$(ARCHES))
 
 ###############################################################################
 BUILD_IMAGE=calico/typha
-PACKAGE_NAME?=github.com/projectcalico/typha
+PACKAGE_NAME?=github.com/unai-ttxu/typha
 
 PUSH_IMAGES?=$(BUILD_IMAGE) quay.io/calico/typha
 RELEASE_IMAGES?=gcr.io/projectcalico-org/typha eu.gcr.io/projectcalico-org/typha asia.gcr.io/projectcalico-org/typha us.gcr.io/projectcalico-org/typha

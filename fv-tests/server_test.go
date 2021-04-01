@@ -40,13 +40,13 @@ import (
 	"github.com/unai-ttxu/libcalico-go/lib/backend/encap"
 	"github.com/unai-ttxu/libcalico-go/lib/backend/model"
 	calinet "github.com/unai-ttxu/libcalico-go/lib/net"
-	. "github.com/projectcalico/typha/fv-tests"
-	"github.com/projectcalico/typha/pkg/calc"
-	"github.com/projectcalico/typha/pkg/snapcache"
-	"github.com/projectcalico/typha/pkg/syncclient"
-	"github.com/projectcalico/typha/pkg/syncproto"
-	"github.com/projectcalico/typha/pkg/syncserver"
-	"github.com/projectcalico/typha/pkg/tlsutils"
+	. "github.com/unai-ttxu/typha/fv-tests"
+	"github.com/unai-ttxu/typha/pkg/calc"
+	"github.com/unai-ttxu/typha/pkg/snapcache"
+	"github.com/unai-ttxu/typha/pkg/syncclient"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/syncserver"
+	"github.com/unai-ttxu/typha/pkg/tlsutils"
 )
 
 var (
@@ -463,7 +463,7 @@ var _ = Describe("With an in-process Server", func() {
 		})
 
 		It("after adding many keys and deleting half, should give correct state", func() {
-			// This test is a regression test for https://github.com/projectcalico/typha/issues/28.  That
+			// This test is a regression test for https://github.com/unai-ttxu/typha/issues/28.  That
 			// issue was caused by a bug in the Ctrie datastructure that we use: if there was an internal
 			// node of that trie that contained exactly two values and we delete one of them, then the
 			// other value would be skipped on subsequent iterations over the trie.  I've verified that,

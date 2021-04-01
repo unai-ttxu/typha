@@ -1,4 +1,4 @@
-package: github.com/projectcalico/typha
+package: github.com/unai-ttxu/typha
 homepage: https://projectcalico.org
 license: Apache-2.0
 import:

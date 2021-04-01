@@ -28,8 +28,8 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
-	"github.com/projectcalico/typha/pkg/syncproto"
-	"github.com/projectcalico/typha/pkg/tlsutils"
+	"github.com/unai-ttxu/typha/pkg/syncproto"
+	"github.com/unai-ttxu/typha/pkg/tlsutils"
 )
 
 var nextID uint64
