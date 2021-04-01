@@ -23,7 +23,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/projectcalico/libcalico-go/lib/set"
+	"github.com/unai-ttxu/libcalico-go/lib/set"
 	"github.com/projectcalico/typha/pkg/logutils"
 )
 

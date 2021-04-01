@@ -27,7 +27,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/projectcalico/libcalico-go/lib/backend/api"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
 	"github.com/projectcalico/typha/pkg/syncproto"
 	"github.com/projectcalico/typha/pkg/tlsutils"
 )

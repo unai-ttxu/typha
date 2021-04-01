@@ -35,11 +35,11 @@ import (
 
 	. "github.com/onsi/ginkgo/extensions/table"
 
-	v3 "github.com/projectcalico/libcalico-go/lib/apis/v3"
-	"github.com/projectcalico/libcalico-go/lib/backend/api"
-	"github.com/projectcalico/libcalico-go/lib/backend/encap"
-	"github.com/projectcalico/libcalico-go/lib/backend/model"
-	calinet "github.com/projectcalico/libcalico-go/lib/net"
+	v3 "github.com/unai-ttxu/libcalico-go/lib/apis/v3"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/encap"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/model"
+	calinet "github.com/unai-ttxu/libcalico-go/lib/net"
 	. "github.com/projectcalico/typha/fv-tests"
 	"github.com/projectcalico/typha/pkg/calc"
 	"github.com/projectcalico/typha/pkg/snapcache"

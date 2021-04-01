@@ -44,8 +44,8 @@ endif
 # assuming that there is a local checkout of libcalico in the same directory as this repo.
 LOCAL_BUILD_MOUNTS ?=
 ifeq ($(LOCAL_BUILD),true)
-LOCAL_BUILD_MOUNTS = -v $(CURDIR)/../libcalico-go:/go/src/$(PACKAGE_NAME)/vendor/github.com/projectcalico/libcalico-go:ro \
-	-v $(CURDIR)/.empty:/go/src/$(PACKAGE_NAME)/vendor/github.com/projectcalico/libcalico-go/vendor:ro
+LOCAL_BUILD_MOUNTS = -v $(CURDIR)/../libcalico-go:/go/src/$(PACKAGE_NAME)/vendor/github.com/unai-ttxu/libcalico-go:ro \
+	-v $(CURDIR)/.empty:/go/src/$(PACKAGE_NAME)/vendor/github.com/unai-ttxu/libcalico-go/vendor:ro
 endif
 
 # we want to be able to run the same recipe on multiple targets keyed on the image name
@@ -146,7 +146,7 @@ LOCAL_GROUP_ID:=$(shell id -g)
 
 # Allow libcalico-go and the ssh auth sock to be mapped into the build container.
 ifdef LIBCALICOGO_PATH
-  EXTRA_DOCKER_ARGS += -v $(LIBCALICOGO_PATH):/go/src/github.com/projectcalico/libcalico-go:ro
+  EXTRA_DOCKER_ARGS += -v $(LIBCALICOGO_PATH):/go/src/github.com/unai-ttxu/libcalico-go:ro
 endif
 ifdef SSH_AUTH_SOCK
   EXTRA_DOCKER_ARGS += -v $(SSH_AUTH_SOCK):/ssh-agent --env SSH_AUTH_SOCK=/ssh-agent
@@ -207,7 +207,7 @@ vendor/.up-to-date: glide.lock
 
 # Default the libcalico repo and version but allow them to be overridden
 LIBCALICO_BRANCH?=$(shell git rev-parse --abbrev-ref HEAD)
-LIBCALICO_REPO?=github.com/projectcalico/libcalico-go
+LIBCALICO_REPO?=github.com/unai-ttxu/libcalico-go
 LIBCALICO_VERSION?=$(shell git ls-remote git@github.com:projectcalico/libcalico-go $(LIBCALICO_BRANCH) 2>/dev/null | cut -f 1)
 
 ## Update libcalico pin in glide.yaml
@@ -218,8 +218,8 @@ update-libcalico:
         echo "Old version: $$OLD_VER";\
 	if [ "$(LIBCALICO_VERSION)" != $$OLD_VER ]; then \
             sed -i "s/$$OLD_VER/$(LIBCALICO_VERSION)/" glide.yaml && \
-	    if [ "$(LIBCALICO_REPO)" != "github.com/projectcalico/libcalico-go" ]; then \
-              glide mirror set https://github.com/projectcalico/libcalico-go $(LIBCALICO_REPO) --vcs git; glide mirror list; \
+	    if [ "$(LIBCALICO_REPO)" != "github.com/unai-ttxu/libcalico-go" ]; then \
+              glide mirror set https://github.com/unai-ttxu/libcalico-go $(LIBCALICO_REPO) --vcs git; glide mirror list; \
             fi;\
           glide up --strip-vendor || glide up --strip-vendor; \
         fi'
