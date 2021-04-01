@@ -24,7 +24,7 @@ import (
 	"strings"
 
 	"github.com/unai-ttxu/libcalico-go/lib/set"
-	"github.com/projectcalico/typha/pkg/logutils"
+	"github.com/unai-ttxu/typha/pkg/logutils"
 )
 
 var (
@@ -38,81 +38,81 @@ var (
 		// These packages are licensed under the LGPL, which is normally viral and hence
 		// incompatible with our licensing! However, they include the linking exception,
 		// allowing us to distribute a binary based on them as long as we don't modify them.
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/juju/ratelimit",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/juju/ratelimit",
 			license: "GNU Lesser General Public License v3.0 (94%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/gopkg.in/yaml.v2",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/gopkg.in/yaml.v2",
 			license: "GNU Lesser General Public License v3.0 (95%)"},
 
 		// Licensed under Apache + some files with MIT/BSD style.
-		{pkgName: "github.com/projectcalico/typha/vendor/gopkg.in/yaml.v2",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/gopkg.in/yaml.v2",
 			license: "? (The Unlicense, 35%)"},
 
 		// Variants on MIT/BSD; files tend to include updated copyright statement.
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/PuerkitoBio/urlesc",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/PuerkitoBio/urlesc",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/beorn7/perks/quantile",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/beorn7/perks/quantile",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/davecgh/go-spew/spew",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/davecgh/go-spew/spew",
 			license: "ISC License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/dgrijalva/jwt-go",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/dgrijalva/jwt-go",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/gogo/protobuf",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/gogo/protobuf",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (90%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/golang/protobuf",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/golang/protobuf",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/golang/protobuf/proto",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/golang/protobuf/proto",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (92%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/gregjones/httpcache/diskcache",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/gregjones/httpcache/diskcache",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/howeyc/gopass",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/howeyc/gopass",
 			license: "ISC License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/imdario/mergo",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/imdario/mergo",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/kardianos/osext",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/kardianos/osext",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/kelseyhightower/envconfig",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/kelseyhightower/envconfig",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/mailru/easyjson",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/mailru/easyjson",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/google/uuid",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/google/uuid",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/peterbourgon/diskv",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/peterbourgon/diskv",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/satori/go.uuid",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/satori/go.uuid",
 			license: "MIT License (98%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/spf13/pflag",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/spf13/pflag",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/google.golang.org/grpc",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/google.golang.org/grpc",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (97%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/gopkg.in/inf.v0",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/gopkg.in/inf.v0",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (97%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/dustin/go-humanize",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/dustin/go-humanize",
 			license: "MIT License (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/google/go-cmp/cmp/internal",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/google/go-cmp/cmp/internal",
 			license: "BSD 3-clause \"New\" or \"Revised\" License (96%)"},
 
 		// Mixed license, Apache and some files under BSD-like.
-		{pkgName: "github.com/projectcalico/typha/vendor/sigs.k8s.io/yaml",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/sigs.k8s.io/yaml",
 			license: "? (BSD 3-clause \"New\" or \"Revised\" License, 83%)"},
 
 		// Apache license with copyright statement in file.
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/Azure/go-autorest",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/Azure/go-autorest",
 			license: "Apache License 2.0 (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/gophercloud/gophercloud",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/gophercloud/gophercloud",
 			license: "Apache License 2.0 (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/vishvananda/netlink/nl",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/vishvananda/netlink/nl",
 			license: "Apache License 2.0 (96%)"},
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/vishvananda/netns",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/vishvananda/netns",
 			license: "Apache License 2.0 (96%)"},
 
 		// Mozilla Public License.  Note, would prohibit us from ever releasing our code
 		// under a *GPL license (if we wanted to do that).
-		{pkgName: "github.com/projectcalico/typha/vendor/github.com/hashicorp/golang-lru/simplelru",
+		{pkgName: "github.com/unai-ttxu/typha/vendor/github.com/hashicorp/golang-lru/simplelru",
 			license: "Mozilla Public License 2.0"},
 	})
 	whitelistedPrefixes = []string{
 		// Standard golang BSD-like license.
-		"github.com/projectcalico/typha/vendor/golang.org/x/",
+		"github.com/unai-ttxu/typha/vendor/golang.org/x/",
 	}
 )
 
@@ -147,7 +147,7 @@ lineLoop:
 			pkgName: pkgName,
 			license: license,
 		}
-		if strings.HasPrefix(pkgName, "github.com/projectcalico/typha/vendor/github.com/projectcalico/") ||
+		if strings.HasPrefix(pkgName, "github.com/unai-ttxu/typha/vendor/github.com/projectcalico/") ||
 			(strings.HasPrefix(pkgName, "github.com/projectcalico/") &&
 				!strings.Contains(pkgName, "vendor")) {
 			logCxt.Info("One of our packages")

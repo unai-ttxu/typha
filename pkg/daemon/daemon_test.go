@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	. "github.com/projectcalico/typha/pkg/daemon"
+	. "github.com/unai-ttxu/typha/pkg/daemon"
 
 	"context"
 	"fmt"
@@ -34,10 +34,10 @@ import (
 	bapi "github.com/unai-ttxu/libcalico-go/lib/backend/api"
 	"github.com/unai-ttxu/libcalico-go/lib/clientv3"
 	"github.com/unai-ttxu/libcalico-go/lib/ipam"
-	fvtests "github.com/projectcalico/typha/fv-tests"
-	"github.com/projectcalico/typha/pkg/config"
-	"github.com/projectcalico/typha/pkg/syncclient"
-	"github.com/projectcalico/typha/pkg/syncserver"
+	fvtests "github.com/unai-ttxu/typha/fv-tests"
+	"github.com/unai-ttxu/typha/pkg/config"
+	"github.com/unai-ttxu/typha/pkg/syncclient"
+	"github.com/unai-ttxu/typha/pkg/syncserver"
 )
 
 var configContents = []byte(`[default]

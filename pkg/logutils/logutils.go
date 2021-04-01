@@ -31,7 +31,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/projectcalico/typha/pkg/config"
+	"github.com/unai-ttxu/typha/pkg/config"
 )
 
 var (
