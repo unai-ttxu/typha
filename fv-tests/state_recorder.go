@@ -17,8 +17,8 @@ package fvtests
 import (
 	"sync"
 
-	"github.com/projectcalico/libcalico-go/lib/backend/api"
-	"github.com/projectcalico/libcalico-go/lib/backend/model"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/model"
 )
 
 func NewRecorder() *StateRecorder {

@@ -19,7 +19,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/projectcalico/libcalico-go/lib/backend/api"
+	"github.com/unai-ttxu/libcalico-go/lib/backend/api"
 )
 
 func NewSyncerCallbacksDecoupler() *SyncerCallbacksDecoupler {

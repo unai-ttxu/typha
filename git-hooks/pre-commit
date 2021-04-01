@@ -147,7 +147,7 @@ if $logrus_hook_check_failed; then
   echo "If a suite doesn't call HookLogrusForGinkgo() then its logs won't be"
   echo "correctly captured during UT runs.  Example:"
   echo
-  echo 'import "github.com/projectcalico/libcalico-go/lib/testutils"'
+  echo 'import "github.com/unai-ttxu/libcalico-go/lib/testutils"'
   echo 'func init() {'
   echo '	testutils.HookLogrusForGinkgo()'
   echo '}'

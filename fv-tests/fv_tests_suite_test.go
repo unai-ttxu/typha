@@ -24,7 +24,7 @@ import (
 import (
 	"github.com/onsi/ginkgo/reporters"
 
-	"github.com/projectcalico/libcalico-go/lib/testutils"
+	"github.com/unai-ttxu/libcalico-go/lib/testutils"
 	"github.com/projectcalico/typha/pkg/logutils"
 )
 
